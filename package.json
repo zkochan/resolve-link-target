@@ -9,7 +9,7 @@
     "index.d.ts"
   ],
   "scripts": {
-    "test": "standard"
+    "test": "standard && tape test.js"
   },
   "repository": {
     "type": "git",
