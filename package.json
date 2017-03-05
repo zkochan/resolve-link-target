@@ -1,0 +1,38 @@
+{
+  "name": "get-link-target",
+  "version": "1.0.0",
+  "description": "Get the filename of a symlink's target",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkochan/get-link-target.git"
+  },
+  "keywords": [
+    "symlink",
+    "link",
+    "target",
+    "absolute"
+  ],
+  "author": "Zoltan Kochan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zkochan/get-link-target/issues"
+  },
+  "homepage": "https://github.com/zkochan/get-link-target#readme",
+  "devDependencies": {
+    "standard": "^9.0.0",
+    "symlink-dir": "^1.0.2",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.11"
+  }
+}
