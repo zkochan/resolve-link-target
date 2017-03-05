@@ -1,5 +1,7 @@
 # get-link-target
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zkochan/get-link-target.svg)](https://greenkeeper.io/)
+
 > Get the filename of a symlink's target
 
 [![npm version](https://img.shields.io/npm/v/get-link-target.svg)](https://www.npmjs.com/package/get-link-target) [![Build Status](https://img.shields.io/travis/zkochan/get-link-target/master.svg)](https://travis-ci.org/zkochan/get-link-target)
