@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/zkochan/get-link-target#readme",
   "devDependencies": {
-    "standard": "^9.0.0",
+    "standard": "^10.0.2",
     "symlink-dir": "^1.0.2",
     "tape": "^4.6.3"
   },
