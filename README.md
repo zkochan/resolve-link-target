@@ -27,4 +27,4 @@ getLinkTarget.sync('path-to-symlink')
 
 ## License
 
-[MIT](LICENSE) © Zoltan Kochan
+[MIT](LICENSE) © [Zoltan Kochan](https://www.kochan.io/)
