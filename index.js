@@ -8,27 +8,26 @@ module.exports.sync = getLinkTargetSync
 function getLinkTarget (linkPath) {
   linkPath = path.resolve(linkPath)
   return new Promise((resolve, reject) => {
-    fs.readlink(linkPath, (err, link) => {
+    fs.readlink(linkPath, (err, target) => {
       if (err) {
         reject(err)
         return
       }
-      if (path.isAbsolute(link)) {
-        resolve(link)
-        return
-      }
-      resolve(path.join(path.dirname(linkPath), link))
+      resolve(_resolveLink(linkPath, target))
     })
   })
 }
 
 function getLinkTargetSync (linkPath) {
   linkPath = path.resolve(linkPath)
-  const link = fs.readlinkSync(linkPath)
+  const target = fs.readlinkSync(linkPath)
+  return _resolveLink(linkPath, target)
+}
 
-  if (path.isAbsolute(link)) {
-    return link
+function _resolveLink (dest, target) {
+  if (path.isAbsolute(target)) {
+    return target
   }
 
-  return path.join(path.dirname(linkPath), link)
+  return path.join(path.dirname(dest), target)
 }
