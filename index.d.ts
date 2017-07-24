@@ -1,5 +1,9 @@
-declare module 'get-link-target' {
-  function getLinkTarget(linkPath: string): Promise<string>;
+declare module 'resolve-link-target' {
+  export = resolveLinkTarget;
 
-  export = getLinkTarget;
+  function resolveLinkTarget (linkPath: string): Promise<string>;
+
+  namespace resolveLinkTarget {
+    export function sync (linkPath: string): string
+  }
 }
