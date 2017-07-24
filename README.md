@@ -17,7 +17,12 @@ const getLinkTarget = require('get-link-target')
 
 getLinkTarget('path-to-symlink')
   .then(targetPath => console.log(targetPath))
+  //> "/home/target"
   .catch(err => console.error(err))
+
+// or synchronously
+getLinkTarget.sync('path-to-symlink')
+//> "/home/target"
 ```
 
 ## License
