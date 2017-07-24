@@ -25,6 +25,20 @@ resolveLinkTarget.sync('path-to-symlink')
 //> "/home/target"
 ```
 
+## API
+
+### `resolveLinkTarget(linkPath)`
+
+Returns a `Promise`.
+
+### `resolveLinkTarget.sync(linkPath)`
+
+#### linkPath
+
+Type: `string`
+
+Path to the symlink or junction that should be resolved.
+
 ## License
 
 [MIT](LICENSE) © [Zoltan Kochan](https://www.kochan.io/)
