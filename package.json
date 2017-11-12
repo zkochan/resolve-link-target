@@ -11,6 +11,9 @@
   "scripts": {
     "test": "standard && tape test.js"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zkochan/resolve-link-target.git"
