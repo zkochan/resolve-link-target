@@ -26,7 +26,7 @@ function getLinkTargetSync (linkPath) {
 
 function _resolveLink (dest, target) {
   if (path.isAbsolute(target)) {
-    return target
+    return path.resolve(target)
   }
 
   return path.join(path.dirname(dest), target)
