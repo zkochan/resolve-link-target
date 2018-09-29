@@ -1,3 +1,5 @@
+> this package has been moved to https://github.com/zkochan/packages/tree/master/resolve-link-target
+
 # resolve-link-target
 
 > Resolve a symlink's (or junction's) target
